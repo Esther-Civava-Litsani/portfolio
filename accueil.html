@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon portfolio</title>
+    <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+    <!--la tête de la page--> 
+    <header>
+        <p class="logo">Bienvenue</p>
+        <!--le menu hamburger-->
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!--le lien vers les autres pages-->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Accueil">Accueil</a></li>  
+                <li><a href="#Projets">Projets</a></li> 
+                <li><a href="#CV">CV</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>  
+        </nav>
+    </header>
+    <main>
+        <section id="Accueil">
+            <div>
+                <h1>Esther Civava Litsani</h1>
+                <h2>Etudiante en L1/LMD Sciense informatiques</h2>
+                <p class="description">
+                    Passionné par la création web innovantes et intuitives. 
+                    Spécialisé dans le développement web
+                </p>
+                <div class="competences-web">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>C</span>
+                </div>
+                <a href="#Projets"><button class="bouton1">Voir mes projets > </button></a>
+            </div>
+            <img src="c:\Users\esthe_45xeiud\OneDrive\Images\Les-images\profil.jpg" alt="photo de profil" class="photo-profil">
+        </section>
+
+        <section id="Projets">
+            <h1 class="h11">Projets</h1>
+            <div class="tout-projets">
+                <div class="projet1">
+                    <img src="c:\Users\esthe_45xeiud\OneDrive\Images\Les-images\Todall.png" alt="la capture d'écran du projet ToD-All" class="image-projet">
+                    <h3>ToD-All</h3>
+                    <p>Un site de gestion des tâches</p>
+                </div>
+                <div class="projet2">
+                    <img src="c:\Users\esthe_45xeiud\OneDrive\Images\Les-images\porfolio.png" alt="la capture d'écran du projet Portfolio" class="image-projet">
+                    <h3>Portfolio</h3>
+                    <p>Un site de personnel</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="CV">
+            <h1 class="h11">Curriculum Vitae</h1>
+            <p>Mon CV est disponible en téléchargement.</p>
+            <a href="cv.pdf" download><button class="bouton">Télécharger mon CV</button></a>
+        </section>
+
+        <section id="contact">
+            <h1 class="h11">Contact</h1>
+            <p class="para">Pour toute question ou collaboration, n'hésitez pas à me contacter.</p>
+            <div class="tout-contact">
+                <div class="contact-info">
+                    <label for="">Nom</label><br>
+                    <input type="text" placeholder="Votre nom" required>
+                    <label for="">Email</label><br>
+                    <input type="email" placeholder="Votre email" required>
+                    <label for="">Message</label><br>
+                    <textarea placeholder="Votre message" required></textarea>
+                    <button type="submit" class="bouton-envoyer">Envoyer</button>
+                    <p> je vous répondrai dans un délai de 48 heures.</p>
+                </div>
+                <div class="coordonnees">
+                    <h3>Mes coordonnées</h3>
+                    <p>Email:
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p class="logo">2025 Esther Civava. </p>
+        <nav>
+            <a href="#Accueil">Accueil</a>  
+            <a href="#Projets">Projets</a>  
+            <a href="#CV">CV</a>  
+            <a href="#contact">Contact</a>  
+        </nav>
+    </footer>
+    <script src="accueil.js"></script>
+</body>
+</html>
