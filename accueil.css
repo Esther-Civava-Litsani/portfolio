@@ -1,0 +1,258 @@
+/* toute la page*/
+*{
+    margin: 0; /* enlever les marges*/
+    padding: 0; /* enlever les marges*/   
+    font-family: serif; /* la police de la page*/
+    box-sizing: border-box; /* pour que la taille de la page soit la meme*/  
+}
+body{ 
+    background-color:  rgb(120, 120, 121); /* la couleur de fond de la page*/
+    padding: 20px; /* espace autour du contenu */
+}
+/*l'entête de la page*/
+header{
+    background-color: rgb(39, 39, 39); /* la couleur de fond de l'entete*/
+    padding: 30px 20px 30px 20px; /* l'espace entre le texte et le bord de l'entete*/
+    display: flex; /* pour aligner les éléments sur la même ligne */
+    align-items: center; /* centre verticalement les éléments */
+    justify-content: space-between; /* espace entre les éléments */
+}
+/*mise en forme du nav*/
+nav a {
+    color: white; /* couleur du texte */
+    font-style: italic; /* style de la police */
+    font-size: x-large; /* taille de la police */
+    text-decoration: none; /* enlever le soulignement */
+    padding: 5px 10px; /* espace autour du texte */  
+}
+nav a:hover {
+    background-color: rgb(111, 136, 189); /* couleur de fond au survol */
+    color: rgb(10, 10, 10); /* couleur du texte au survol */
+    border-radius: 20px; /* arrondir les coins au survol */
+}
+nav ul {
+      list-style: none; /* enlever les puces de la liste */
+      display: flex; /* pour aligner les éléments sur la même ligne */
+    }
+    /* Menu hamburger (caché sur grand écran) */
+    .menu-toggle {
+      display: none; /* cacher le hamburger par défaut */
+      flex-direction: column; /* pour empiler les barres du hamburger */
+      cursor: pointer; /* curseur de la souris en main */
+    }
+    .menu-toggle .bar {
+      height: 2px; /* hauteur des barres du hamburger */
+      width: 20px;
+      background-color: #fff;
+      margin-bottom: 4px ; /* espace entre les barres */
+    }
+/*misee en forme pour le logo*/
+.logo{
+    font-size: xx-large; /* taille de la police*/
+    font-style: italic; /* style de la police*/
+    color: white; /* couleur du texte*/
+}
+/* mise en forme de l'accueil*/
+#Accueil{
+    background-color: rgb(148, 152, 214); /* couleur de fond de l'accueil*/
+    padding: 100px; /* espace autour du contenu de l'accueil */
+    border-bottom-left-radius: 20px; /* arrondir le coin en bas à gauche */
+    border-bottom-right-radius: 20px; /* arrondir le coin en bas à droite */
+    margin-top: 0px; /* espace au-dessus de l'accueil */
+    display: flex;
+}
+.photo-profil{
+    width: 250px; /* largeur de la photo de profil */
+    height: 300px; /* hauteur de la photo de profil */
+    border-radius: 50%; /* rendre la photo de profil ronde */
+    margin-left: 150px; /* espace à gauche de la photo de profil */
+}
+h1{
+    font-size: 2.5em; /* taille du titre */
+    color: rgb(39, 39, 39); /* couleur du texte du titre */
+}
+h2{
+    font-size: 1.5em; /* taille du sous-titre */
+    color: rgb(39, 39, 39); /* couleur du texte du sous-titre */
+}
+.description{
+    font-size: 1.2em; /* taille du texte de description */
+    color: rgb(39, 39, 39); /* couleur du texte de description */
+    margin-top: 10px; /* espace au-dessus du texte de description */
+}
+.competences-web{
+    display: flex; /* pour aligner les éléments sur la même ligne */
+    flex-wrap: wrap; /* pour que les éléments s'enroulent si nécessaire */
+    gap: 20px; /* espace entre les compétences */
+    margin-top: 20px; /* espace au-dessus des compétences */
+    margin-bottom: 50px; /* espace en dessous des compétences */
+}
+span{
+    background-color: rgb(49, 49, 49); /* couleur de fond des compétences */
+    color: white; /* couleur du texte des compétences */
+    padding: 10px; /* espace autour du texte des compétences */
+    border-radius: 20px; /* arrondir les coins des compétences */
+    font-size: large; /* taille du texte des compétences */
+    font-style: italic; /* style de la police des compétences */
+}
+.bouton1{
+    background-color: rgb(214, 124, 124); /* couleur de fond du bouton */
+    color: rgb(10, 10, 10); /* couleur du texte du bouton */
+    padding: 10px 20px; /* espace autour du texte du bouton */
+    border-radius: 20px; /* arrondir les coins du bouton */
+    font-size: large; /* taille du texte du bouton */
+    font-style: italic; /* style de la police du bouton */
+    text-decoration: none; /* enlever le soulignement */
+}
+.bouton1:hover{
+    background-color: rgb(67, 194, 99); /* couleur de fond du bouton au survol */
+    color: rgb(10, 10, 10); /* couleur du texte du bouton au survol */
+}
+/* mise en forme de projets */
+#Projets{
+    background-color: rgb(148, 152, 214); /* couleur de fond des projets */
+    padding: 30px; /* espace autour du contenu des projets */
+    border-radius: 20px; /* arrondir les coins des projets */
+    margin-top: 30px; /* espace au-dessus des projets */
+}
+.tout-projets{
+    display: flex; /* pour aligner les projets sur la même ligne */
+    gap: 20px; /* espace entre les projets */
+    align-items: center; /* centre verticalement les projets */
+    margin: auto; /* centrer les projets */
+}
+.projet1, .projet2 {
+    background-color: rgb(148, 173, 194); /* couleur de fond des projets */
+    color: white; /* couleur du texte des projets */
+    padding: 20px; /* espace autour du texte des projets */
+    border-radius: 20px; /* arrondir les coins des projets */
+    margin-bottom: 20px; /* espace en dessous de chaque projet */
+}
+.image-projet{
+    width: 250px; /* largeur de l'image du projet */
+    height: auto; /* hauteur automatique de l'image du projet */
+    border-radius: 20px; /* arrondir les coins de l'image du projet */
+}
+.h11{
+    font-size: 2.5em; /* taille du titre */
+    color: rgb(39, 39, 39); /* couleur du texte du titre */
+    margin-bottom: 50px; /* espace en dessous du titre */
+}
+h3{
+    font-size: 1.5em; /* taille du titre des projets */
+    color: rgb(39, 39, 39); /* couleur du texte du titre des projets */
+    margin-bottom: 10px; /* espace en dessous du titre des projets */
+}
+p{
+    font-size: 1.2em; /* taille du texte des projets */
+    color: rgb(39, 39, 39); /* couleur du texte des projets */
+    margin-top: 10px; /* espace au-dessus du texte des projets */
+}
+/* mise en forme du cv*/
+#CV{
+    background-color: rgb(148, 152, 214); /* couleur de fond du CV */
+    padding: 30px; /* espace autour du contenu du CV */
+    border-radius: 20px; /* arrondir les coins du CV */
+    margin-top: 30px; /* espace au-dessus du CV */
+}
+/* mise en forme du contact*/
+#contact{
+    background-color: rgb(148, 152, 214); /* couleur de fond du contact */
+    padding: 30px; /* espace autour du contenu du contact */
+    border-radius: 20px; /* arrondir les coins du contact */
+    margin-top: 30px; /* espace au-dessus du contact */
+}
+.para{
+    font-size: 1.2em; /* taille du texte du contact */
+    color: rgb(39, 39, 39); /* couleur du texte du contact */
+    margin-top: 10px; /* espace au-dessus du texte du contact */
+    text-align: center;
+}
+.tout-contact{
+    display: flex; /* pour aligner les informations de contact sur la même ligne */
+    justify-content: space-between; /* espace entre les informations de contact */
+    margin-top: 20px; /* espace au-dessus des informations de contact */
+}
+.contact-info{
+    background-color: rgb(190, 186, 186); /* couleur de fond des informations de contact */
+    color: white; /* couleur du texte des informations de contact */
+    padding: 20px; /* espace autour du texte des informations de contact */
+    border-radius: 20px; /* arrondir les coins des informations de contact */
+    font-size: large; /* taille du texte des informations de contact */
+    font-style: italic; /* style de la police des informations de contact */
+}
+label{
+    font-size: 1.2em; /* taille du texte des labels */
+    color: rgb(39, 39, 39); /* couleur du texte des labels */
+    margin-right: 10px; /* espace à droite des labels */
+}
+input, textarea{
+    width: 90%; /* largeur des champs de saisie */
+    padding: 10px; /* espace autour du texte dans les champs de saisie */
+    border-radius: 10px; /* arrondir les coins des champs de saisie */
+    border: 1px solid rgb(39, 39, 39); /* bordure des champs de saisie */
+    margin-bottom: 20px; /* espace en dessous des champs de saisie */
+}
+.bouton-envoyer{
+    background-color: rgb(214, 124, 124); /* couleur de fond du bouton d'envoi */
+    color: rgb(10, 10, 10); /* couleur du texte du bouton d'envoi */
+    padding: 10px 20px; /* espace autour du texte du bouton d'envoi */
+    border-radius: 20px; /* arrondir les coins du bouton d'envoi */
+    font-size: large; /* taille du texte du bouton d'envoi */
+    font-style: italic; /* style de la police du bouton d'envoi */
+    text-decoration: none; /* enlever le soulignement */
+}
+.bouton-envoyer:hover{
+    background-color: rgb(67, 194, 99); /* couleur de fond du bouton d'envoi au survol */
+    color: rgb(10, 10, 10); /* couleur du texte du bouton d'envoi au survol */
+}
+/* mise en forme du footer */
+footer{
+    background-color: rgb(39, 39, 39); /* couleur de fond du footer */
+    color: white; /* couleur du texte du footer */
+    padding: 20px; /* espace autour du texte du footer */
+    justify-content: space-between; /* espace entre les éléments du footer */
+    align-items: center; /* centre verticalement les éléments du footer */
+    margin-top: 30px; /* espace au-dessus du footer */
+    display: flex;
+}
+/* Le responsive design */
+@media (max-width: 768px) {
+
+    /* Afficher le hamburger */
+    .menu-toggle {
+        display: flex;
+    }
+    /* Cacher initialement les liens de navigation */
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+    }
+    /* Quand le menu est actif */
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #444;
+ }
+    #Accueil, #Projets, #CV, #contact, .tout-projets, .tout-contact {
+        flex-direction: column; /* pour que les éléments s'empilent verticalement */
+        align-items: center; /* centre horizontalement les éléments */
+    }
+    .photo-profil {
+        width: 200px; /* réduire la taille de la photo de profil */
+        height: 250px; /* réduire la hauteur de la photo de profil */
+        margin-left: 0; /* enlever l'espace à gauche de la photo de profil */
+    }
+
+}
+
+
+
+
+
+
