@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="accueil.css">
 </head>
 <body>
-    <!--la tête de la page--> 
+
+    <!--==================================================L'ENTÊTE==============================================-->
+    
     <header>
-        <p class="logo">Bienvenue</p>
-        <!--le menu hamburger-->
-        <div class="menu-toggle" id="mobile-menu">
-        </div>
-        <!--le lien vers les autres pages-->
+        <h3>Bienvenue</h3>
+        <!--le lien-->
         <nav>
-            <ul class="nav-links">
-                <li><a href="#Accueil">Accueil</a></li>  
-                <li><a href="#Projets">Projets</a></li> 
-                <li><a href="#CV">CV</a></li> 
-                <li><a href="#contact">Contact</a></li>
-            </ul>  
+            <a href="#Accueil">Accueil</a>
+            <a href="#Projets">Projets</a>
+            <a href="#CV">CV</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <!--==================================================LE CORPS==============================================-->
+    
     <main>
+
+        <!--==================================================L'ACCUEIL==============================================-->
+
         <section id="Accueil">
             <div>
                 <h1>Esther Civava Litsani</h1>
                 <h2>Etudiante en L1/LMD Sciense informatiques</h2>
-                <p class="description">
+                <p>
                     Passionné par la création web innovantes et intuitives. 
                     Spécialisé dans le développement web
                 </p>
@@ -39,10 +42,12 @@
                     <span>Python</span>
                     <span>C</span>
                 </div>
-                <a href="#Projets"><button class="bouton1">Voir mes projets > </button></a>
+                <button href='#Projets' class="bouton1">Voir mes projets > </button>
             </div>
             <img src="c:\Users\esthe_45xeiud\OneDrive\Images\Les-images\profil.jpg" alt="photo de profil" class="photo-profil">
         </section>
+
+        <!--==================================================LES PROJETS==============================================-->
 
         <section id="Projets">
             <h1 class="h11">Projets</h1>
@@ -60,17 +65,118 @@
             </div>
         </section>
 
+            <!--==================================================LE CV==============================================-->
+
         <section id="CV">
-            <h1 class="h11">Curriculum Vitae</h1>
-            <p>Mon CV est disponible en téléchargement.</p>
-            <a href="cv.pdf" download><button class="bouton">Télécharger mon CV</button></a>
+            <div class="titre-cv">
+                <h1>Curriculum Vitae</h1>
+                <button href="cv.pdf" download>Télécharger mon CV</button></a>
+            </div>
+            <div class="cv-content">
+                <!--le profil-->
+                <h2>PROFIL</h2>
+                <P>
+                    Je viens d’obtenir mon diplôme en Commerce et Gestion. J’ai de bonnes compétences en comptabilité, 
+                    en audit et en fiscalité. Je suis organisée, sérieuse et j’aime analyser les chiffres. J’ai déjà aidé 
+                    à préparer les comptes et à réaliser des audits internes. Je souhaite rejoindre une entreprise dynamique 
+                    pour mettre mes compétences financières au service de ses projets.
+                </P>
+                <!--les coordonnées-->
+                <h2>Coordonnees</h2>
+                <ul>
+                    <li>Téléphone : 0123456789</li>
+                    <li>Email : esthercivava05@gmail.com</li>
+                    <li>Adresse : Bo-boliko 2, N° 47 Kintambo, Kinshasa</li>
+                    <li>Téléphone : +243 977 520 303</li>
+                    <li>Nationalité : Congolaise</li>
+                    <li>Permis de conduire : Non</li>
+                </ul>
+
+                <h2>Expérience professionnelle</h2>
+                <table>
+                    <tr>
+                        <th>Periode</th>
+                        <th>Poste</th>
+                        <th>Entreprise</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>8/2024 au 9/2024</td>
+                        <td>Assistante comptable</td>
+                        <td>Office des Routes</td>
+                        <td>
+                            Nous avons aidé à préparer les comptes et à réaliser des audits internes, 
+                            ce qui a permis d'améliorer la transparence financière de l'organisation.
+                        </td>
+                    </tr>
+                </table>
+                <!--les compétences-->
+                <h2>Compétences</h2>
+                <ul>
+                    <li>Comptabilité générale</li>
+                    <li>Analyse financière</li>
+                    <li>Gestion budgétaire</li>
+                    <li>Logiciels de comptabilité (Banana)</li>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Office</li>
+                    <li>Fiscalité</li>
+                    <li>Gestion de caisse</li>
+                    <li>Gestion des stocks</li>
+                    <li>Gestion des achats</li>
+                    <li>Gestion des ventes</li>
+                    <li>Gestion des fournisseurs</li>
+                    <li>Gestion des clients</li>
+                    <li>Travail sous pression</li>
+                    <li>Enregistrement des opérations comptables</li>
+                    <li>Facturation client & préparation de factures</li>
+                </ul>
+                <!--les formations-->
+                <h2>Formation</h2>
+                <table>
+                    <tr>
+                        <th>Année</th>
+                        <th>Diplôme</th>
+                        <th>Établissement</th>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Baccalauréat en Commerciale et Gestion</td>
+                        <td>Lycée Technique Bolingani</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Certificat de stage</td>
+                        <td>Office de Routes</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Certificat d'apprentissage d'Anglais</td>
+                        <td>UFC</td>
+                    </tr>
+                </table>
+                <!--les centres d'intérêt-->
+                <h2>Centres d'intérêt</h2>
+                <ul>
+                    <li>Lecture</li>
+                    <li>Voyages</li>
+                    <li>Informatique</li>
+                    <li>Pâtisserie</li>
+                </ul>
+                <!--les langues parlées-->
+                <h2>Langues</h2>
+                <ul>
+                    <li>Français : Langue maternelle</li>
+                    <li>Lingala : Intermédiaire</li>
+                    <li>Anglais : débutant</li>
+                </ul>
         </section>
 
+        <!--==================================================LE CONTACT==============================================-->
+
         <section id="contact">
-            <h1 class="h11">Contact</h1>
+            <h1>Contact</h1>
             <p class="para">Pour toute question ou collaboration, n'hésitez pas à me contacter.</p>
-            <div class="tout-contact">
-                <div class="contact-info">
+                <form>
                     <label for="">Nom</label><br>
                     <input type="text" placeholder="Votre nom" required>
                     <label for="">Email</label><br>
@@ -79,29 +185,21 @@
                     <textarea placeholder="Votre message" required></textarea>
                     <button type="submit" class="bouton-envoyer">Envoyer</button>
                     <p> je vous répondrai dans un délai de 48 heures.</p>
-                </div>
-                <div class="coordonnees">
-                    <h3>Mes coordonnées</h3>
-                    <p>Email:
-
-                </div>
-            </div>
-
+                </form>
         </section>
     </main>
+
+    <!--==================================================LE PIED DE PAGE==============================================-->
+
     <footer>
-        <div class="footer-base">
-            <p class="logo">Bienvenue</p>
-            <!--le menu hamburger-->
-            <div class="menu-toggle" id="mobile-menu"></div>
-            <!--le lien vers les autres pages-->
+        <div>
+            <h4>Bienvenue</h4>
+            <!--le lien-->
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#Accueil">Accueil</a></li>  
-                    <li><a href="#Projets">Projets</a></li> 
-                    <li><a href="#CV">CV</a></li> 
-                    <li><a href="#contact">Contact</a></li>
-                </ul>  
+                <a href="#Accueil">Accueil</a>
+                <a href="#Projets">Projets</a>
+                <a href="#CV">CV</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
         <p>2025 Esther Civava.</p>
